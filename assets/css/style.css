@@ -1,0 +1,178 @@
+@font-face {
+    font-family: IranYekanFaNum-Regular;
+    src: url('../font/IRANYekanX-Regular.woff');
+    src: url('../font/IRANYekanX-Regular.ttf');
+}
+@font-face {
+    font-family: IranYekanFaNum-Bold;
+    src: url('../font/IRANYekanX-Bold.woff');
+    src: url('../font/IRANYekanX-Bold.ttf');
+}
+
+body {
+    font-family: IranYekanFaNum-Regular;
+    background: #dddddd;  
+    height: 100vh;
+    text-align: center;   
+    margin: 48px;
+    padding: 0;
+}
+
+.outerBox {
+    width: 700px;
+    background: #a8a8a8;
+    padding: 80px 10px;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+.registerSection {
+    background: #f3f3f3;
+    display: inline-block;
+    width: 550px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    border-radius: 16px;
+}
+
+.title h1 {
+    font-family: IranYekanFaNum-Bold;
+    text-align: center;
+    font-size: 24px;
+    color: #8d8d8d;
+    margin: 0;
+}
+
+.title-with-lines {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.title-with-lines::before,
+.title-with-lines::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 150px;
+  height: 1px; 
+  background: #ccc;
+}
+
+.title-with-lines::before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.title-with-lines::after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.title h6 {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    color: #818181;
+}
+
+.formSection {
+    margin-top: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.halfInputContainer {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: right;
+    font-size: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.halfInput {
+    display: inline-block;
+    width: calc(50% - 5px);
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.halfInput:first-child {
+    margin-left: 10px;
+}
+
+.lineInput {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 0 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #fff;
+    font-family: inherit;
+    direction: rtl;
+}
+
+.checkboxSection {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.checkboxSection input[type="checkbox"] {
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
+}
+
+.buttonContainer {
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 92%;
+    height: 40px;
+    color: white;
+    background: linear-gradient(180deg, #46e688, #37b333);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 700;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.halfInput input {
+    border-radius: 8px;
+}
+
+.lineInput input {
+    border-radius: 8px;
+}
+
+h6 span {
+    color: red;
+}
