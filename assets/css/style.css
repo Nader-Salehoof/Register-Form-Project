@@ -26,6 +26,8 @@ body {
     border-radius: 16px;
 }
 
+
+/* استایل های مربوط به فرم ثبت نام */
 .registerSection {
     background: #f3f3f3;
     display: inline-block;
@@ -175,4 +177,16 @@ button {
 
 h6 span {
     color: red;
+}
+
+
+
+@media (max-width : 420px) {
+    .outerBox {
+        width: 400px;
+    }
+
+    .registerSection {
+        width: 90%;
+    }
 }
